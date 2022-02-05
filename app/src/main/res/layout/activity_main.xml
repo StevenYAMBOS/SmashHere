@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris"
+    android:id="@+id/constraint_layout"
+    tools:context=".MainActivity">
+
+<!--Configuration de la TOOLBAR-->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gris"
+        app:layout_constraintTop_toTopOf="@+id/constraint_layout">
+
+          <androidx.appcompat.widget.Toolbar
+              android:id="@+id/toolbar"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/gris"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:title="Smash Here"
+              app:titleTextColor="@color/white"
+              app:menu="@menu/toolbar_nav"/>
+
+<!--    TAB LAYOUT, il se trouve dans AppBar pour servir d'élément dans l'ensemble et
+  et se retrouver EN DESSOUS de la ToolBar-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/constraint_layout"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/red"
+        app:tabTextColor="@color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--    Android ViewPager est un composant d'interface introduit dans la bibliothèque -->
+<!--    de soutien d'Android. Cela permet à l'utilisateur de glisser (swipe) vers la gauche -->
+<!--    ou vers la droite afin d'afficher une toute nouvelle page (écran).-->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+<!--    Configuration de la BOTTOM BAR-->
+       <com.google.android.material.bottomnavigation.BottomNavigationView
+           android:id="@+id/bottom_nav_bar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/gris"
+           app:itemIconTint="@color/white"
+           app:itemTextColor="@color/white"
+           app:layout_constraintBottom_toBottomOf="@+id/constraint_layout"
+           app:layout_constraintStart_toStartOf="@+id/constraint_layout"
+           app:menu="@menu/bottom_nav_view"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

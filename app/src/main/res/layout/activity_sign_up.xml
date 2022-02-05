@@ -1,9 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gris"
     tools:context=".Sign_Up">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/smashBallSignUp"
+        android:src="@drawable/logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-50dp">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/titleSignUp"
+        android:src="@drawable/titre"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-100dp">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Create your account"
+        android:textColor="#a9a9a9"
+        android:layout_marginTop="-35dp"
+        android:paddingBottom="15dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:drawableStart="@drawable/ic_email"
+        android:drawableTint="#a9a9a9"
+        android:hint="Mail adress"
+        android:textColorHint="#a9a9a9"
+        android:textStyle="italic"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_email">
+    </EditText>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:drawableTint="#a9a9a9"
+                android:drawableStart="@drawable/ic_password"
+                android:hint="Password"
+                android:textColorHint="#a9a9a9"
+                android:textStyle="italic"
+                android:ems="10"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@drawable/custom_buttons">
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="or"
+        android:textColor="#a9a9a9"
+        android:layout_below="@+id/btn_connection"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="20dp">
+    </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_googleSignUp"
+            android:background="@drawable/google_logo"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal">
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have account ?"
+            android:textColor="#a9a9a9"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal">
+    </TextView>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login."
+            android:textColor="#a9a9a9"
+            android:background="@color/gris"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal">
+        </Button>
+
+    </LinearLayout>
+</RelativeLayout>

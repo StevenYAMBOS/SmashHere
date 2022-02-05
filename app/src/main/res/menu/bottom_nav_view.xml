@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    HOME-->
+    <item
+        android:id="@+id/btn_home"
+        android:title="@string/btn_mainHome"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"/>
+
+<!--    FIGHTERS-->
+    <item
+        android:id="@+id/btn_fighters"
+        android:title="@string/btn_fighters"
+        android:icon="@drawable/ic_fighters"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/btn_advancedTechniques"
+        android:title="@string/btn_advancedTechniques"
+        android:icon="@drawable/ic_advancedtechniques"
+        android:enabled="true"/>
+
+
+<!--    SETTINGS-->
+    <item
+        android:id="@+id/btn_settings"
+        android:title="@string/btn_setting"
+        android:icon="@drawable/ic_settings"
+        android:enabled="true"/>
+
+</menu>

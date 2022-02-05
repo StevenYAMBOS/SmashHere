@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Smash Here</string>
+    <string name="btn_home">Accueil</string>
+    <string name="btn_search">Recherche</string>
+    <string name="btn_settings">Paramètres</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="btn_characters">Accès aux persos</string>
+    <string name="btn_mu">ouvre les MUs</string>
+    <string name="btn_glossary">léxique</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="banjo">Banjo and Kazooie</string>
+
+    <!--    Boutons BOTTOM APP BAR-->
+    <string name="btn_mainHome">Home</string>
+    <string name="btn_fighters">Fighters</string>
+    <string name="btn_advancedTechniques">Advanced Techniques</string>
+    <string name="btn_setting">Settings</string>
+
+</resources>

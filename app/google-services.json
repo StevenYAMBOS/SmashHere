@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "878480219770",
+    "project_id": "smash-here",
+    "storage_bucket": "smash-here.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878480219770:android:3691322376d6daa826e5c3",
+        "android_client_info": {
+          "package_name": "com.example.smashhere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878480219770-ntqhdldlpsm6121tkcf538i1kv9okthc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmQw4T1LE4NmSAdz6O7p4Fmv11Yur4vlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878480219770-ntqhdldlpsm6121tkcf538i1kv9okthc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
