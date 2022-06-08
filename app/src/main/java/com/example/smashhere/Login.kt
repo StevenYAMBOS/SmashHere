@@ -26,7 +26,7 @@ class Login : AppCompatActivity() {
 
         //Bouton pour aller dans "Sign UP"
         btn_sign_in.setOnClickListener{
-            startActivity(Intent(this, MainCharacterSelection::class.java))
+            startActivity(Intent(this, Sign_Up::class.java))
             finish()
         }
 

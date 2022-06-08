@@ -14,22 +14,28 @@
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/drawable/splash_screen_background.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/activity_characters.xml" value="0.14074074074074075" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/activity_glossary.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/activity_login.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/activity_main.xml" value="0.10555555555555556" />
+        <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/activity_main3.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/activity_main_character_selection.xml" value="0.1578125" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/activity_mario_page.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/activity_matchs_up.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/activity_sign_up.xml" value="0.12314814814814815" />
+        <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/activity_sp.xml" value="0.1408514492753623" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/fragment_advanced_techniques.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/fragment_blank.xml" value="0.4359637774902975" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/fragment_characters.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/fragment_favorites.xml" value="0.22256568778979907" />
+        <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/fragment_fighters.xml" value="0.1" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/fragment_frame_data.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/fragment_in_tournament.xml" value="0.1578125" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/fragment_new_comers.xml" value="0.1578125" />
+        <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/fragment_newcomers.xml" value="0.1578125" />
+        <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/fragment_settings.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/fragment_test.xml" value="0.1578125" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/fragment_veterans.xml" value="0.1578125" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/navigation_header.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/layout/splash_screen.xml" value="0.1408514492753623" />
@@ -39,7 +45,7 @@
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/menu/nav_toolbar.xml" value="0.22" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/menu/navigation_menu.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/menu/toolbar_mu.xml" value="0.17552083333333332" />
-        <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/menu/toolbar_nav.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/menu/toolbar_nav.xml" value="0.1" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/menu/top_app_bar.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/mipmap-anydpi-v26/SmashHereLogo.xml" value="0.1" />
         <entry key="..\:/Users/Steven/AndroidStudioProjects/SmashHere/app/src/main/res/mipmap-anydpi-v26/SmashHereLogo_round.xml" value="0.1" />

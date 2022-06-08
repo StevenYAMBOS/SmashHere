@@ -1,81 +1,71 @@
 package com.example.smashhere
 
-import android.annotation.SuppressLint
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
-import android.widget.Button
-import androidx.appcompat.app.ActionBarDrawerToggle
+import android.widget.FrameLayout
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
-import com.example.smashhere.Extensions.toast
 import com.example.smashhere.adapters.ViewPagerAdapter
+import com.example.smashhere.bottomNavigation.AdvancedTechniques
+import com.example.smashhere.bottomNavigation.Fighters
+import com.example.smashhere.bottomNavigation.Home
+import com.example.smashhere.bottomNavigation.Settings
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationBarView
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
-import java.io.BufferedReader
+import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var navigationView: NavigationView
-    private lateinit var navController: NavController
-    private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var drawerLayout: DrawerLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Ajouter "androidx.appcompat.widget.Toolbar" dans Import pour que la PUTAIN de ToolBar fonctionne
-        //Appeler la Toolbar
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
+//        On initialise la BottomNaviationView dans OnCreate
+        val NavigationBarView = findViewById<BottomNavigationView>(R.id.bottom_nav_view)
 
-        val tabLayout: TabLayout = findViewById<TabLayout>(R.id.tab_layout)
-        val viewPager2: ViewPager2 = findViewById<ViewPager2>(R.id.view_pager2)
-        val adapter = ViewPagerAdapter(supportFragmentManager,lifecycle)
+//        Fragments de la BottomNavigationView bar
+        val homeFragment = Home()
+        val fightersFragment = Fighters()
+        val advancedTechniquesFragment = AdvancedTechniques()
+        val settingsFragment = Settings()
 
-        viewPager2.adapter=adapter
+//        homeFragment comme Fragment principal
+        addFragment(homeFragment)
 
-        TabLayoutMediator(tabLayout,viewPager2) { tab, position ->
-            when (position) {
-                0 -> {
-                    tab.text = "Newcomers"
-                }
-                1 -> {
-                    tab.text = "Veterans"
-                }
-                2 -> {
-                    tab.text = "In tournament"
-                }
+        //BottomNavigationView dans MainActivity avec le fragment "Home" comme fragment principal
+        NavigationBarView.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.home -> addFragment(homeFragment)
+                R.id.fighters -> addFragment(fightersFragment)
+                R.id.advancedTechniques -> addFragment(advancedTechniquesFragment)
+                R.id.settings -> addFragment(settingsFragment)
             }
-        }.attach()
-
-    }
-    //Créer les actions de la barre d’action
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.toolbar_nav, menu)
-        return true
-    }
-
-    //Connecter les icônes qu'on a appeler en créant le menu
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.notifications
-            -> true
+            true
         }
-        return super.onOptionsItemSelected(item)
     }
 
-    //Log Out (A CREER)
+//Fonction qui aurait pu s'appeler n'importe comment qui permet d'utiliser
+//    supportFragmentManager. Le ChildManager (qui permet d'utiliser des
+//    fragments dans d'autres endroits) est dans le fragment Home
+    private fun addFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.FrameLayout, fragment)
+                .commit()
+        }
+
+    }
+
 }

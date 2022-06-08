@@ -20,4 +20,9 @@
     <string name="btn_advancedTechniques">Advanced Techniques</string>
     <string name="btn_setting">Settings</string>
 
+    <!--    TABLAYOUT titres-->
+    <string name="newcomers">Newcomers</string>
+    <string name="veterans">Veterans</string>
+    <string name="in_tournament">In Tournament</string>
+
 </resources>
