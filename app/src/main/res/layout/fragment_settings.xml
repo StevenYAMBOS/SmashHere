@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            app:title="Settings"
+            app:titleCentered="true"
+            app:titleTextColor="@color/white">
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+<!--    GENERAL-->
+    <TextView
+        android:text="General"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/gris_clair" />
+
+    <Button
+        android:id="@+id/Themes"
+        android:text="Themes"
+        android:textColor="@color/white"
+        android:background="@color/gris"
+        android:layout_marginStart="20dp"
+        android:gravity="left|center"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/App_icons"
+        android:text="App icons"
+        android:textColor="@color/white"
+        android:background="@color/gris"
+        android:layout_marginStart="20dp"
+        android:gravity="left|center"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/Languages"
+        android:text="Languages"
+        android:textColor="@color/white"
+        android:background="@color/gris"
+        android:layout_marginStart="20dp"
+        android:gravity="left|center"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+<!--NOTES ET AVIS-->
+    <TextView
+        android:text="Ratings and reviews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/gris_clair" />
+
+    <Button
+        android:id="@+id/Rate_us"
+        android:text="Rate us"
+        android:textColor="@color/white"
+        android:background="@color/gris"
+        android:layout_marginStart="20dp"
+        android:gravity="left|center"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+<!--À PROPOS de l'app-->
+    <TextView
+        android:text="About"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/gris_clair" />
+
+
+    <Button
+        android:id="@+id/Version"
+        android:text="Version"
+        android:textColor="@color/white"
+        android:background="@color/gris"
+        android:layout_marginStart="20dp"
+        android:gravity="left|center"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+<!--    LOG OUT bouton-->
+    <Button
+        android:id="@+id/log_out"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/custom_buttons"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</LinearLayout>
